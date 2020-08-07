@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/your_name"
+        android:textColor="@color/appintro_background_color"
+        android:textSize="24sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/yourName"
+        android:layout_width="269dp"
+        android:layout_height="56dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/trusted_addresses"
+        android:textColor="@color/appintro_background_color"
+        android:textSize="24sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/contact1"
+        android:layout_width="269dp"
+        android:layout_height="56dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="@string/insert_1_email_address"
+        android:inputType="textEmailAddress"
+        android:text="" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/contact2"
+        android:layout_width="269dp"
+        android:layout_height="56dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="@string/insert_2_email_address"
+        android:inputType="textEmailAddress"
+        android:text="" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/contact3"
+        android:layout_width="272dp"
+        android:layout_height="56dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="@string/insert_3_email_address"
+        android:inputType="textEmailAddress"
+        android:text="" />
+</LinearLayout>

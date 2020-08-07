@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ваше имя"
+        android:textColor="@color/appintro_background_color"
+        android:textSize="36sp" />
+
+    <TextView
+        android:layout_width="267dp"
+        android:layout_height="95dp"
+        android:text="Введите то имя, под которым хотите отправлять уведомления доверенным лицам."
+        android:textColor="@color/appintro_background_color"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/usernameIntro"
+        android:layout_width="269dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="textPersonName"
+        android:text="" />
+
+</LinearLayout>

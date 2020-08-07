@@ -4,5 +4,15 @@
     <string name="add">Add</string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
+    <string name="insert_1_email_address">Insert 1 email address</string>
+    <string name="insert_2_email_address">Insert 2 email address</string>
+    <string name="insert_3_email_address">Insert 3 email address</string>
+    <string name="trusted_addresses">Доверенные лица</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="alarm">Меня задержали</string>
+    <string name="cancel">Отмена</string>
+    <string name="settings">Settings</string>
+    <string name="permissions">Разрешения</string>
+    <string name="enable_loc_permission">Разрешите приложению отправку данных о вашем местоположении.</string>
 
 </resources>

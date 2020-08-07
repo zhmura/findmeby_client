@@ -7,6 +7,7 @@ import android.os.StrictMode;
 
 import com.findmeby.client.receiver.ConnectionChangeReceiver;
 import com.findmeby.client.receiver.LocationReceiver;
+import com.findmeby.client.receiver.SyncAlarmManager;
 
 import org.jetbrains.annotations.NotNull;
 import androidx.annotation.NonNull;
@@ -31,23 +32,21 @@ public class FindMeApp extends Application {
     }
 
     private void registerReceivers() {
-        //registerCheckConnectionAfterBootReceiver();
-        //registerCheckerConnectionReceiver();
         registerLocationReceiver();
-        registerAlarmReceivers();
+        registerAlarmReceiver();
         registerConnectionChangerReceiver();
     }
 
-    private void registerAlarmReceivers() {
-       // IntentFilter intentFilter = new IntentFilter(GetNewMessagesAlarmManager.ACTION);
-       // LocalBroadcastManager.getInstance(this).registerReceiver(new GetNewMessagesAlarmManager(), intentFilter);
+    private void registerAlarmReceiver() {
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(SyncAlarmManager.ACTION);
+        LocalBroadcastManager.getInstance(this).registerReceiver(new SyncAlarmManager(), intentFilter);
     }
 
     private void registerConnectionChangerReceiver() {
         IntentFilter intentFilter = new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE");
         registerReceiver(new ConnectionChangeReceiver(), intentFilter);
-   }
-
+    }
 
     private void registerLocationReceiver() {
         IntentFilter intentFilter = new IntentFilter();

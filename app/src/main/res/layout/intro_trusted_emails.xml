@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Доверенные лица"
+        android:textColor="@color/appintro_background_color"
+        android:textSize="36sp" />
+
+    <TextView
+        android:layout_width="255dp"
+        android:layout_height="95dp"
+        android:layout_margin="10dp"
+        android:text="Введите емэйлы доверенных людей (не более 3х)"
+        android:textColor="@color/appintro_background_color"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/contact1intro"
+        android:layout_width="269dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Insert 1 email address"
+        android:inputType="textEmailAddress"
+        android:text="" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/contact2intro"
+        android:layout_width="269dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Insert 2 email address"
+        android:inputType="textEmailAddress"
+        android:text="" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/contact3intro"
+        android:layout_width="272dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Insert 3 email address"
+        android:inputType="textEmailAddress"
+        android:text="" />
+
+</LinearLayout>

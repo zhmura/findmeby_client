@@ -15,7 +15,7 @@ public abstract class ConnectionRestoredReceiver extends BroadcastReceiver {
         Intent intent;
         try {
             intent = new Intent(context,
-                    Class.forName("com.sanda.truckdoc.client.receivers.ConnectionRestoredReceiverForFileUpload"));
+                    Class.forName("com.findmeby.client.receivers.ConnectionRestoredReceiverForFileUpload"));
             intent.setAction(ACTION);
             LocalBroadcastManager.getInstance(context).sendBroadcast(intent);
         } catch (ClassNotFoundException e) {
